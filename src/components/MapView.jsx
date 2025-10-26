@@ -1,7 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import './MapView.css'
 import 'leaflet/dist/leaflet.css'
-import { mockData } from '../data/mockData';
 import { markerRed, markerGreen, markerYellow } from '../assets/customIcons';
 
 export const MapView = ({ data }) => {

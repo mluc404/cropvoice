@@ -1,15 +1,16 @@
+import { states } from "../data/mockData"
+import './Filter.css'
 
-
-export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalChange }) => {
+export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalChange, selectedState, onStateChange }) => {
 
     const cropTypes = ["Corn", "Soy"]
     const signalTypes = ["Healthy", "Warning", "Critical"]
     return (
-        <div>
-            <div>
-                <label htmlFor="crop-type">Crop Type:</label>
+        <div className="select-container">
+            <div className="select-group">
+                <label htmlFor="select-crop">Crop</label>
                 <select
-                    id="crop-type"
+                    id="select-crop"
                     value={selectecCrop}
                     onChange={(e) => onCropChange(e.target.value)}
                 >
@@ -21,10 +22,10 @@ export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalCh
                     ))}
                 </select>
             </div>
-            <div>
-                <label htmlFor="signal-type">Signal Type:</label>
+            <div className="select-group">
+                <label htmlFor="select-signal">Status</label>
                 <select
-                    id="signal-type"
+                    id="select-signal"
                     value={selectedSignal}
                     onChange={(e) => onSignalChange(e.target.value)}
                 >
@@ -32,6 +33,21 @@ export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalCh
                     {signalTypes.map(signal => (
                         <option key={signal} value={signal}>
                             {signal}
+                        </option>
+                    ))}
+                </select>
+            </div>
+            <div className="select-group">
+                <label htmlFor="select-state">State</label>
+                <select
+                    id="select-state"
+                    value={selectedState}
+                    onChange={(e) => onStateChange(e.target.value)}
+                >
+                    <option>All</option>
+                    {states.map(state => (
+                        <option key={state} value={state}>
+                            {state}
                         </option>
                     ))}
                 </select>
