@@ -3,7 +3,7 @@ export const mockData = [
         id: 1,
         name: "Jefferson, KS - Field A",
         location: "Jefferson, Kansas",
-        coordinates: { lat: 39.2828, long: 95.3103 },
+        coordinates: { lat: 39.2828, long: -95.3103 },
         crop: "Corn",
         acreage: 20,
         signalType: "Healthy",
@@ -32,7 +32,7 @@ export const mockData = [
         coordinates: { lat: 42.0170, long: -93.6480 },
         crop: "Corn",
         acreage: 35,
-        signalType: "Critial",
+        signalType: "Critical",
         signalColor: "Red",
         notes: "Confirmed white mold infection. Imediate action required"
     },
@@ -66,7 +66,7 @@ export const mockData = [
         coordinates: { lat: 39.8400, long: -88.9540 },
         crop: "Soy",
         acreage: 40,
-        signalType: "Critial",
+        signalType: "Critical",
         signalColor: "Red",
         notes: "Confirmed white mold infection. Immediate action required"
     },
