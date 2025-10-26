@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css'
 import { mockData } from '../data/mockData';
 import { markerRed, markerGreen, markerYellow } from '../assets/customIcons';
 
-export const MapView = () => {
+export const MapView = ({ data }) => {
     const initialLoc = [39.2828, -95.3103] // center at Jefferson, KS
 
     const markerChoice = {
@@ -19,7 +19,7 @@ export const MapView = () => {
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='OpenStreetmap contributions' />
-                {mockData.map(field => (
+                {data.map(field => (
                     <Marker
                         position={[field.coordinates.lat, field.coordinates.long]}
                         key={field.id}
