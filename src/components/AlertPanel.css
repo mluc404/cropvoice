@@ -1,8 +1,14 @@
-.alert-card {
-    border: #717171 solid 1px;
+.alert-panel-container {
+    overflow-y: scroll;
+    border: grey solid 2px;
+    border-radius: 8px;
 }
 
 .alert-card_top {
     display: flex;
     justify-content: space-between;
+}
+
+.alert-card {
+    border: #717171 solid 1px;
 }

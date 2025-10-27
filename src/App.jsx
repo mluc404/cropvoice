@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 import { DashBoard } from './components/DashBoard'
+import { Header } from './components/Header'
 
 function App() {
 
   return (
-    <>
-      <h1>CropVoice</h1>
+    <div className='wrapper'>
+      <Header />
       <DashBoard />
-    </>
+    </div>
   )
 }
 

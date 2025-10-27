@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+}
+
+.wrapper>.app-header {
+    flex: 0 0 10%;
+}
+
+.wrapper>.dashboard {
+    flex: 0 0 85%;
+}

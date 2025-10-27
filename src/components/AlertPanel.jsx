@@ -4,7 +4,7 @@ export const AlertPanel = ({ data, selectedAlertType, onAlertTypeChange }) => {
     const alertTypes = ['Warning', 'Critical', 'Active', 'Resolved']
 
     return (
-        <div>
+        <div className='alert-panel-container'>
             <h2>Alert</h2>
             <div>
                 <select

@@ -52,6 +52,9 @@ export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalCh
                     ))}
                 </select>
             </div>
+            <div className="select-group">
+                <button>Clear Filters</button>
+            </div>
         </div>
     )
 }
