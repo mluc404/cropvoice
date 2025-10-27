@@ -1,5 +1,5 @@
 import { states } from "../data/mockData"
-import './Filter.css'
+import './Filters.css'
 
 export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalChange, selectedState, onStateChange }) => {
 

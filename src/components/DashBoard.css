@@ -1,0 +1,16 @@
+.dashboard {
+    display: flex;
+    /* width: 1000px; */
+}
+
+.dashboard-left {
+    flex: 1;
+}
+
+.dashboard-center {
+    flex: 3;
+}
+
+.dashboard-right {
+    flex: 1;
+}
