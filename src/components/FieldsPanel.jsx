@@ -10,12 +10,12 @@ export const FieldsPanel = ({ data }) => {
     return (
         <div className='field-panel-container'>
             <div className='field-panel_header'>
-                <h2>Fields ({data.length})</h2>
+                <div>Fields ({data.length})</div>
             </div>
             <div className='field-panel'>
                 {data.map(field => (
                     <div className="field-card">
-                        <h4 className='field-card_name'>{field.name}</h4>
+                        <div className='field-card_name'>{field.name}</div>
 
                         <div className='field-card_middle'>
                             <div className='field-card_info'>

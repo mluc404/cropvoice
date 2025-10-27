@@ -1,7 +1,7 @@
 .dashboard {
     display: flex;
     gap: 20px;
-    width: 95%;
+    width: 98%;
     margin: 0 auto;
     min-height: 0;
 }
