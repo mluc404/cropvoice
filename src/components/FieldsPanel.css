@@ -3,16 +3,116 @@
     flex-direction: column;
     min-height: 0;
     flex: 1;
-    border: grey solid 2px;
+    background-color: #ffffff;
+    gap: 20px;
+
+    border: rgba(128, 128, 128, 0.3) solid 2px;
     border-radius: 8px;
+    padding: 12px;
+    padding-right: 6px;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
 }
 
 .field-panel {
     flex: 1;
     min-height: 0;
     overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding-right: 10px;
 }
 
 .field-card {
-    border: #717171 solid 1px;
+    border: rgba(128, 128, 128, 0.3) solid 2px;
+    border-radius: 8px;
+    padding: 16px;
+    /* box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.5); */
+
+    color: rgb(62, 62, 62);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+
+.field-card_name {
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+.field-card_middle {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 12px;
+
+}
+
+.field-card_status {
+    background-color: green;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+
+    border-radius: 12px;
+}
+
+.field-card_tag_acre {
+    margin: 0;
+}
+
+
+.field-card_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field-card_line {
+    width: 100%;
+    margin: 16px 0px 10px 0px;
+}
+
+
+
+/* ////////////////////////////////////// */
+/* Edit Scroll Bar */
+/* WebKit browsers (Chrome, Edge, Safari) */
+.field-panel::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.field-panel::-webkit-scrollbar-button {
+    display: none;
+    /* remove top/bottom arrow buttons */
+    width: 0;
+    height: 0;
+}
+
+.field-panel::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 8px;
+}
+
+.field-panel::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    border: 2px solid transparent;
+    /* space around thumb */
+    background-clip: padding-box;
+}
+
+.field-panel::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.55);
 }

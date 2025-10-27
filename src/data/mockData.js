@@ -10,7 +10,8 @@ export const mockData = {
             acreage: 20,
             signalType: "Healthy",
             signalColor: "Green",
-            notes: "Healthy field. No stress signal detected"
+            notes: "Healthy field. No stress signal detected",
+            lastScan: '2025-10-27'
 
         },
 
@@ -24,7 +25,8 @@ export const mockData = {
             acreage: 15,
             signalType: "Warning",
             signalColor: "Yellow",
-            notes: "Possible early fungal signal. Monitor closely"
+            notes: "Possible early fungal signal. Monitor closely",
+            lastScan: '2025-10-26'
 
         },
 
@@ -38,7 +40,9 @@ export const mockData = {
             acreage: 35,
             signalType: "Critical",
             signalColor: "Red",
-            notes: "Confirmed white mold infection. Imediate action required"
+            notes: "Confirmed white mold infection. Imediate action required",
+            lastScan: '2025-10-25'
+
         },
         {
             id: 4,
@@ -50,7 +54,9 @@ export const mockData = {
             acreage: 85,
             signalType: "Healthy",
             signalColor: "Green",
-            notes: "Healthy field. No stress signal detected"
+            notes: "Healthy field. No stress signal detected",
+            lastScan: '2025-10-25'
+
         },
         {
             id: 5,
@@ -62,7 +68,9 @@ export const mockData = {
             acreage: 60,
             signalType: "Warning",
             signalColor: "Yellow",
-            notes: "Possible early fungal signal. Monitor closely"
+            notes: "Possible early fungal signal. Monitor closely",
+            lastScan: '2025-10-25'
+
 
         },
         {
@@ -75,7 +83,9 @@ export const mockData = {
             acreage: 40,
             signalType: "Critical",
             signalColor: "Red",
-            notes: "Rust infection detected - spray recommended"
+            notes: "Rust infection detected - spray recommended",
+            lastScan: '2025-10-25'
+
         },
         {
             id: 7,
@@ -87,7 +97,9 @@ export const mockData = {
             acreage: 40,
             signalType: "Critical",
             signalColor: "Red",
-            notes: "Confirmed white mold infection. Immediate action required"
+            notes: "Confirmed white mold infection. Immediate action required",
+            lastScan: '2025-10-25'
+
         },
         {
             id: 8,
@@ -99,7 +111,9 @@ export const mockData = {
             acreage: 50,
             signalType: "Healthy",
             signalColor: "Green",
-            notes: "Healthy field. No stress signal detected"
+            notes: "Healthy field. No stress signal detected",
+            lastScan: '2025-10-25'
+
         },
         {
             id: 9,
@@ -111,7 +125,9 @@ export const mockData = {
             acreage: 50,
             signalType: "Warning",
             signalColor: "Yellow",
-            notes: "Possible early fungal signal. Monitor closely."
+            notes: "Possible early fungal signal. Monitor closely.",
+            lastScan: '2025-10-25'
+
         },
     ],
     alerts: [

@@ -5,10 +5,15 @@ export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalCh
 
     const cropTypes = ["Corn", "Soy"]
     const signalTypes = ["Healthy", "Warning", "Critical"]
+    const clearFilters = () => {
+        onCropChange('All')
+        onSignalChange('All')
+        onStateChange('All')
+    }
     return (
         <div className="select-container">
             <div className="select-group">
-                <label htmlFor="select-crop">Crop</label>
+                <label htmlFor="select-crop">🌾 Crop Type</label>
                 <select
                     id="select-crop"
                     value={selectecCrop}
@@ -23,7 +28,7 @@ export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalCh
                 </select>
             </div>
             <div className="select-group">
-                <label htmlFor="select-signal">Status</label>
+                <label htmlFor="select-signal">⚠️ Status</label>
                 <select
                     id="select-signal"
                     value={selectedSignal}
@@ -38,7 +43,7 @@ export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalCh
                 </select>
             </div>
             <div className="select-group">
-                <label htmlFor="select-state">State</label>
+                <label htmlFor="select-state">🗺️ State</label>
                 <select
                     id="select-state"
                     value={selectedState}
@@ -53,7 +58,11 @@ export const Filters = ({ selectecCrop, onCropChange, selectedSignal, onSignalCh
                 </select>
             </div>
             <div className="select-group">
-                <button>Clear Filters</button>
+                <button
+                    onClick={clearFilters}
+                >
+                    Reset
+                </button>
             </div>
         </div>
     )
