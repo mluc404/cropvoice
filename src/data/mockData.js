@@ -11,7 +11,13 @@ export const mockData = {
             signalType: "Healthy",
             signalColor: "Green",
             notes: "Healthy field. No stress signal detected",
-            lastScan: '2025-10-27'
+            lastScan: '2025-10-27',
+            fieldBoundaries: [
+                { lat: 39.4, lng: -95.5 },
+                { lat: 39.4, lng: -95.1 },
+                { lat: 39.0, lng: -95.1 },
+                { lat: 39.0, lng: -95.5 }
+            ]
 
         },
 
@@ -26,7 +32,13 @@ export const mockData = {
             signalType: "Warning",
             signalColor: "Yellow",
             notes: "Possible early fungal signal. Monitor closely",
-            lastScan: '2025-10-26'
+            lastScan: '2025-10-26',
+            fieldBoundaries: [
+                { lat: 40.8, lng: -98.2 },
+                { lat: 40.8, lng: -98.4 },
+                { lat: 41.0, lng: -98.4 },
+                { lat: 41.0, lng: -98.2 }
+            ]
 
         },
 
@@ -42,6 +54,13 @@ export const mockData = {
             signalColor: "Red",
             notes: "Confirmed white mold infection. Imediate action required",
             lastScan: '2025-10-25'
+            ,
+            fieldBoundaries: [
+                { lat: 42.2170, lng: -93.8480 },
+                { lat: 42.2170, lng: -93.4480 },
+                { lat: 41.8170, lng: -93.4480 },
+                { lat: 41.8170, lng: -93.8480 }
+            ]
 
         },
         {
@@ -56,6 +75,13 @@ export const mockData = {
             signalColor: "Green",
             notes: "Healthy field. No stress signal detected",
             lastScan: '2025-10-25'
+            ,
+            fieldBoundaries: [
+                { lat: 34.7000, lng: -91.7500 },
+                { lat: 34.7000, lng: -91.3500 },
+                { lat: 34.3000, lng: -91.3500 },
+                { lat: 34.3000, lng: -91.7500 }
+            ]
 
         },
         {
@@ -70,6 +96,14 @@ export const mockData = {
             signalColor: "Yellow",
             notes: "Possible early fungal signal. Monitor closely",
             lastScan: '2025-10-25'
+
+            ,
+            fieldBoundaries: [
+                { lat: 43.8480, lng: -93.5680 },
+                { lat: 43.8480, lng: -93.1680 },
+                { lat: 43.4480, lng: -93.1680 },
+                { lat: 43.4480, lng: -93.5680 }
+            ]
 
 
         },
@@ -86,6 +120,14 @@ export const mockData = {
             notes: "Rust infection detected - spray recommended",
             lastScan: '2025-10-25'
 
+            ,
+            fieldBoundaries: [
+                { lat: 40.0400, lng: -89.1540 },
+                { lat: 40.0400, lng: -88.7540 },
+                { lat: 39.6400, lng: -88.7540 },
+                { lat: 39.6400, lng: -89.1540 }
+            ]
+
         },
         {
             id: 7,
@@ -100,19 +142,35 @@ export const mockData = {
             notes: "Confirmed white mold infection. Immediate action required",
             lastScan: '2025-10-25'
 
+            ,
+            fieldBoundaries: [
+                { lat: 42.1830, lng: -91.8680 },
+                { lat: 42.1830, lng: -91.4680 },
+                { lat: 41.7830, lng: -91.4680 },
+                { lat: 41.7830, lng: -91.8680 }
+            ]
+
         },
         {
             id: 8,
             name: "Dalton, IL - Field B",
             location_city: "Dalton",
             location_state: "Illinois",
-            coordinates: { lat: 39.7107, long: -88.6778 },
+            coordinates: { lat: 39.7107, long: -88.4778 },
             crop: "Soy",
             acreage: 50,
             signalType: "Healthy",
             signalColor: "Green",
             notes: "Healthy field. No stress signal detected",
             lastScan: '2025-10-25'
+
+            ,
+            fieldBoundaries: [
+                { lat: 39.9107, lng: -88.5778 },
+                { lat: 39.9107, lng: -88.3778 },
+                { lat: 39.5107, lng: -88.3778 },
+                { lat: 39.5107, lng: -88.5778 }
+            ]
 
         },
         {
@@ -127,6 +185,14 @@ export const mockData = {
             signalColor: "Yellow",
             notes: "Possible early fungal signal. Monitor closely.",
             lastScan: '2025-10-25'
+
+            ,
+            fieldBoundaries: [
+                { lat: 39.485858, lng: -96.5691 },
+                { lat: 39.485858, lng: -96.1691 },
+                { lat: 39.085858, lng: -96.1691 },
+                { lat: 39.085858, lng: -96.5691 }
+            ]
 
         },
     ],

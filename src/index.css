@@ -8,6 +8,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(158, 179, 86, 0.4);
+  /* background-image: url('./assets/pattern.webp'); */
+  background-size: 40%;
+  background-blend-mode: soft-light;
+
 }
 
 h1,

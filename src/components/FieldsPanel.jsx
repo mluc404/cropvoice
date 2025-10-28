@@ -15,7 +15,7 @@ export const FieldsPanel = ({ data }) => {
             <div className='field-panel'>
                 {data.map(field => (
                     <div className="field-card">
-                        <div className='field-card_name'>{field.name}</div>
+                        <div className='field-card_name'>{field.id}. {field.name}</div>
 
                         <div className='field-card_middle'>
                             <div className='field-card_info'>

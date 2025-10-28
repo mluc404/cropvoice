@@ -3,3 +3,24 @@
     border-radius: 8px;
     border: rgba(94, 103, 56, 0.5) solid 2px;
 }
+
+.popup-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.popup-card_name {
+    font-size: 1.1rem;
+}
+
+.popup-card_info {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+hr {
+    width: 100%;
+}
