@@ -1,17 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   width: 100%;
-
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: rgba(158, 179, 86, 0.4);
-  /* background-image: url('./assets/pattern.webp'); */
+  /* background-image: url('./assets/pattern.webp');
   background-size: 40%;
-  background-blend-mode: soft-light;
-
+  background-blend-mode: soft-light; */
+  width: 100%;
 }
 
 h1,

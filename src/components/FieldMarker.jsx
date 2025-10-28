@@ -25,10 +25,10 @@ export const FieldMarker = ({ field, markerChoice }) => {
                     <div className='popup-card'>
                         <h4 className='popup-card_name'>{field.id}. {field.name}</h4>
                         <div className='popup-card_info'>
-                            <div><strong>Plant:</strong> {field.crop}</div>
-                            <div><strong>Size:</strong> {field.acreage} acres</div>
+                            <div><strong>Plant: </strong>{field.crop}</div>
+                            <div><strong>Size: </strong>{field.acreage} acres</div>
                             <div>
-                                <strong>Status:</strong>
+                                <strong>Status: </strong>
                                 <span className='popup-card_info_status'>{field.signalType}</span>
                             </div>
                             <div><strong>Last Scan:</strong> {field.lastScan}</div>

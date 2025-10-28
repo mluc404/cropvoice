@@ -17,9 +17,8 @@
 }
 
 .alert-panel_heading {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    /* color: #5e6738; */
 }
 
 .alert-card_top {
@@ -31,12 +30,14 @@
 .alert-card {
     border: rgba(128, 128, 128, 0.3) solid 2px;
     border-radius: 8px;
-    padding: 16px;
+    padding: 8px 16px 16px 16px;
     color: rgb(62, 62, 62);
 
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    font-size: 0.8rem;
 
     border-left: var(--status-color) solid 5px;
 }
@@ -59,7 +60,13 @@
 }
 
 .alert-panel_filter select {
-    width: 120px;
+    width: 80px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+.alert-panel_filter option {
+    font-size: 0.8rem;
 }
 
 .alert-card_info {
@@ -74,7 +81,6 @@
 
 
 .alert-card_name {
-    font-size: 1rem;
     font-weight: 700;
     margin-top: 8px;
 }
@@ -84,7 +90,7 @@
     background-color: rgb(221, 58, 58);
     border-radius: 6px;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 700;
     padding: 5px 8px;
 }
@@ -98,7 +104,7 @@
     background-color: #dfffef;
     border-radius: 6px;
     color: #00984c;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 700;
 
     display: flex;
@@ -106,10 +112,6 @@
     width: 20%;
     min-width: 80px;
     padding: 5px 8px;
-}
-
-.alert-card_time {
-    font-size: 1rem;
 }
 
 .alert-card:hover {
@@ -150,5 +152,3 @@
 .alert-card_container::-webkit-scrollbar-thumb:hover {
     background-color: rgba(0, 0, 0, 0.55);
 }
-
-/* ////////////// */
