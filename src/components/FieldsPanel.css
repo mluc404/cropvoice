@@ -17,11 +17,9 @@
     flex: 1;
     min-height: 0;
     overflow-y: scroll;
-
     display: flex;
     flex-direction: column;
     gap: 16px;
-
     padding-right: 10px;
 }
 
@@ -29,10 +27,7 @@
     border: rgba(128, 128, 128, 0.3) solid 2px;
     border-radius: 8px;
     padding: 16px;
-    /* box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.5); */
-
     color: rgb(62, 62, 62);
-
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -54,12 +49,11 @@
 }
 
 .field-card_status {
-    background-color: green;
+    background-color: #09ba09;
     color: white;
     font-size: 0.9rem;
     font-weight: 600;
     width: 80px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +87,7 @@
 .field-card:hover {
     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
     cursor: pointer;
-    border-color: #028b02;
+    border-color: #9eb356
 }
 
 

@@ -1,5 +1,5 @@
 .leaflet-container {
-    /* height: 80%; */
     flex: 1;
     border-radius: 8px;
+    border: rgba(94, 103, 56, 0.5) solid 2px;
 }

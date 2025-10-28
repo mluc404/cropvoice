@@ -24,7 +24,7 @@ export const AlertPanel = ({ data, selectedAlertType, onAlertTypeChange }) => {
     return (
         <div className='alert-panel-container'>
             <div className='alert-panel_header'>
-                <h2>Alerts ({data.length})</h2>
+                <div className='alert-panel_heading'>Alerts ({data.length})</div>
                 <div className='alert-panel_filter'>
                     <select
                         value={selectedAlertType}
@@ -42,7 +42,11 @@ export const AlertPanel = ({ data, selectedAlertType, onAlertTypeChange }) => {
                 {data.map(alert => (
                     <div
                         className="alert-card"
-                        style={{ borderLeftColor: STATUS_COLORS[alert.type] }}
+                        // style={{ borderLeftColor: STATUS_COLORS[alert.type] }}
+                        style={{
+                            '--status-color': STATUS_COLORS[alert.type],
+                            '--status-hover-color': STATUS_COLORS[alert.type]
+                        }}
                     >
                         <div className='alert-card_top'>
                             <span>

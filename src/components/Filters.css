@@ -40,6 +40,7 @@ button {
     font-weight: 550;
     color: rgb(55, 55, 55);
     padding: 8px 16px;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
 button:hover {
@@ -47,4 +48,6 @@ button:hover {
     color: white;
 }
 
-/* make button shrink on click later */
+button:active {
+    transform: scale(0.95);
+}

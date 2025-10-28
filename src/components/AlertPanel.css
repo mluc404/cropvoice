@@ -16,6 +16,12 @@
     padding-top: 16px;
 }
 
+.alert-panel_heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* color: #5e6738; */
+}
+
 .alert-card_top {
     display: flex;
     justify-content: space-between;
@@ -32,7 +38,7 @@
     flex-direction: column;
     gap: 10px;
 
-    border-left: rgba(128, 128, 128, 0.3) solid 5px;
+    border-left: var(--status-color) solid 5px;
 }
 
 .alert-card_container {
@@ -107,9 +113,9 @@
 }
 
 .alert-card:hover {
-    /* background-color: #e6e6e6; */
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+    border-color: var(--status-color);
 
 }
 

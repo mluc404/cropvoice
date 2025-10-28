@@ -2,7 +2,7 @@ import './FieldsPanel.css'
 
 export const FieldsPanel = ({ data }) => {
     const STATUS_COLORS = {
-        'Healthy': "#26b326ff",
+        'Healthy': "#00984c",
         'Critical': "#e82828ff",
         'Warning': "#f4c013ff",
     };

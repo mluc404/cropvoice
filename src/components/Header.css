@@ -1,35 +1,40 @@
 .app-header {
-    background-color: #0aa372;
+    background-color: #ffffff;
     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
     display: flex;
-    padding: 8px 20px 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+}
+
+.app-header_hero {
+    display: flex;
+    align-items: center;
 }
 
 .app-header img {
-    width: 40px;
+    width: 50px;
     height: auto;
-    background-color: rgb(169, 255, 187);
-    padding: 5px;
-    border-radius: 8px;
+    margin-right: 10px;
 }
 
 .app-header_left {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
 .app-header_name {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .app-header_name_crop {
-    color: #fefefd
+    color: #9eb356
 }
 
 .app-header_name_voice {
-    color: #fdfff3
+    color: #5e6738
 }
 
 .app-header_logo_emoji {
@@ -37,26 +42,77 @@
     margin-right: 0px;
 }
 
-.app-header_left {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
 
 .app-header_tagline {
-    color: #ffffff;
+    color: #5e6738;
     padding-left: 10px;
     font-size: 1rem;
+    font-weight: 600;
 }
-
-/* .app-header_name_crop {
-    color: #9eb356
-}
-
-.app-header_name_voice {
-    color: #5e6738
-} */
 
 .app-header a {
     text-decoration: none;
+}
+
+.app-header_name {
+    display: flex;
+    align-items: start;
+    gap: 3px;
+}
+
+.app-header_name_TM {
+    font-size: 0.6rem;
+    color: #5e6738;
+    margin-top: 10px;
+}
+
+.app-header_navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+
+.app-header_navBar button {
+    border-radius: 0;
+    font-weight: 600;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+
+    color: #9eb356;
+    background-color: white;
+    border: #9eb356 solid 2px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.app-header_navBar button:hover {
+    color: white;
+    background-color: #9eb356;
+    border: #9eb356 solid 2px;
+}
+
+.app-header_navBar button:first-child {
+    color: white;
+    background-color: #9eb356;
+    border: #9eb356 solid 2px;
+    border-radius: 0;
+    font-weight: 600;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.app-header_navBar button:first-child:hover {
+    color: #9eb356;
+    background-color: white;
+    border: #9eb356 solid 2px;
 }
