@@ -2,6 +2,8 @@
 
 ### *A mock UI prototype inspired by InnerPlant’s CropVoice system, where plants communicate their health directly to farmers.*
 
+<img src="./public/cropVoice_mockup_1.png" alt="CropVoice mockup"  style="border-radius: 15px" width="700"/>
+
 
 ## 📖 Overview
 

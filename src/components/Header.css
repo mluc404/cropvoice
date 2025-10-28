@@ -112,3 +112,18 @@
     background-color: white;
     border: #9eb356 solid 2px;
 }
+
+a {
+    color: inherit
+}
+
+#github-btn {
+    color: #9eb356;
+    background-color: white;
+}
+
+#github-btn:hover {
+    color: white;
+    background-color: #9eb356;
+    border: #9eb356 solid 2px;
+}

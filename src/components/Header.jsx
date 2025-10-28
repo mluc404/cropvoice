@@ -30,9 +30,18 @@ export const Header = () => {
                 </a>
             </div>
             <div className='app-header_navBar'>
-                <button>DASHBOARD</button>
+                <button className='navBar-first-btn'>DASHBOARD</button>
                 <button>REPORTS</button>
-                <button>SETTINGS</button>
+                <a
+                    className='myInfo'
+                    href='https://github.com/mluc404/cropvoice'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    <button id='github-btn'>
+                        GITHUB
+                    </button>
+                </a>
             </div>
         </div>
     )
