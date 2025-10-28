@@ -24,7 +24,7 @@ export const AlertPanel = ({ data, selectedAlertType, onAlertTypeChange }) => {
     return (
         <div className='alert-panel-container'>
             <div className='alert-panel_header'>
-                <h2>Alert ({data.length})</h2>
+                <h2>Alerts ({data.length})</h2>
                 <div className='alert-panel_filter'>
                     <select
                         value={selectedAlertType}
